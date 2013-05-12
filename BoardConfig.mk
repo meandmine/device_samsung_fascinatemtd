@@ -115,7 +115,9 @@ TARGET_BOOTANIMATION_USE_RGB565 := true
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/aries-common/recovery/graphics.c
+
+# Disable for TWRP
+# BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/aries-common/recovery/graphics.c
 BOARD_USES_BML_OVER_MTD := true
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/fascinatemtd/shbootimg.mk
 TARGET_RECOVERY_PRE_COMMAND := "echo 1 > /cache/.startrecovery; sync;"
@@ -127,3 +129,11 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # SkTextBox for libtvout
 BOARD_USES_SKTEXTBOX := true
+
+# TWRP 2 details
+DEVICE_RESOLUTION := 480x800
+TW_INCLUDE_INJECTTWRP := false
+TW_NO_REBOOT_BOOTLOADER := true
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_DEFAULT_EXTERNAL_STORAGE := true
