@@ -125,5 +125,16 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/charging_mode
 # Suspend in charger to disable capacitive keys
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# chargers
+BOARD_CHARGER_RES := device/samsung/fascinatemtd/charger
+
 # SkTextBox for libtvout
 BOARD_USES_SKTEXTBOX := true
+
+# TWRP 2 details
+DEVICE_RESOLUTION := 480x800
+TW_INCLUDE_INJECTTWRP := false
+TW_NO_REBOOT_BOOTLOADER := true
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_DEFAULT_EXTERNAL_STORAGE := true
