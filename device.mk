@@ -41,7 +41,6 @@
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES := \
-	device/samsung/fascinatemtd/vold.fstab:system/etc/vold.fstab \
 	device/samsung/aries-common/egl.cfg:system/lib/egl/egl.cfg \
 	device/samsung/aries-common/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc
 
